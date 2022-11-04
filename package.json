@@ -1,0 +1,23 @@
+{
+  "name": "nestrun",
+  "version": "0.0.1",
+  "description": "CLI runner for NestJS apps.",
+  "author": {
+    "name": "Michal Palys-Dudek",
+    "email": "michal@pnd.io"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/michaldudek/nestrun",
+  "bugs": "https://github.com/michaldudek/nestrun/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaldudek/nestrun.git"
+  },
+  "bin": {
+    "nestrun": "bin/nestrun.js"
+  },
+  "dependencies": {
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^4.0.0"
+  }
+}
