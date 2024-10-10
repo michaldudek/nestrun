@@ -2,10 +2,15 @@
 const path = require('path');
 const fs = require('fs');
 
-require('ts-node/register');
-require('tsconfig-paths/register');
+const { NODE_ENV = 'development' } = process.env;
+const isProd = NODE_ENV === 'production';
 
-const [, , command, ...argv] = process.argv;
+require('ts-node').register({
+  transpileOnly: isProd,
+  // TODO make use of swc configurable (e.g. through package.json ?)
+  swc: isProd,
+});
+require('tsconfig-paths/register');
 
 const cliFile = locateCliFile();
 require(cliFile);

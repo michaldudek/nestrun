@@ -17,7 +17,8 @@
     "nestrun": "bin/nestrun.js"
   },
   "dependencies": {
-    "ts-node": "^10.0.0",
-    "tsconfig-paths": "^4.0.0"
+    "@swc/core": "1.7.35",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }
