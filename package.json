@@ -1,6 +1,6 @@
 {
   "name": "nestrun",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "CLI runner for NestJS apps.",
   "author": {
     "name": "Michal Palys-Dudek",
